@@ -4,6 +4,11 @@
 </header>
 
 <main>
+    <form  class="todo-form">
+        <input type="text" placeholder="што неабходна зрабіць?">
+        <button type="submit">Дадаць</button>
+    </form>
+
     <section class="todo-list" *ngIf="todos.length">
         <div class="todo-item" *ngFor="let todo of todos" [class.completed]="todo.completed">
             <button class="checkbox icon" (click)="toggle(todo)">

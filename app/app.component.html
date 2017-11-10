@@ -4,8 +4,8 @@
 </header>
 
 <main>
-    <form  class="todo-form">
-        <input type="text" placeholder="што неабходна зрабіць?">
+    <form  class="todo-form" (submit)="create($event, titleImput)">
+        <input type="text" placeholder="што неабходна зрабіць?" #titleImput>
         <button type="submit">Дадаць</button>
     </form>
 
